@@ -1,0 +1,439 @@
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasComment
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasComment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasComment> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#FlightSurvey> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasComment> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasPassenger
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasPassenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#FlightSurvey> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasPassenger> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Passenger> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasRating
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Rating> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#name
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Airline> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#overallRating
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#overallRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#overallRating> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#overallRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#int> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#publicationDate
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#publicationDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#publicationDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#publicationDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#recommended
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#recommended> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#recommended> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#travelerType
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#travelerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#travelerType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#TravelerType> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#travelerType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Aircraft
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Aircraft> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Aircraft> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Flight> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Airline
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Airline> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Airline> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#FlightSurvey> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Author
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Author> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Author> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CabinCrew
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CabinCrew> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CabinCrew> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#FlightSurvey> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#FlightSurvey> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CommentBody
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CommentBody> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CommentBody> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CommentTitle
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CommentTitle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CommentTitle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#DatePublished
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#DatePublished> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#DatePublished> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#DestinationCountry
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#DestinationCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#DestinationCountry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Flight> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Flight
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Flight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Flight> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#FlightSurvey> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#FlightSurvey
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#FlightSurvey> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#GroundService
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#GroundService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#GroundService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#FlightSurvey> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#OriginCountry
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#OriginCountry> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#OriginCountry> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Flight> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Passenger
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Passenger> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Passenger> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#FlightSurvey> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Rating
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Rating> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Recommended
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Recommended> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Recommended> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#SeatComfort
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#SeatComfort> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#SeatComfort> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#SeatType> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#SeatType
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#SeatType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#SeatType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#FlightSurvey> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#TravelerType
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#TravelerType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#TravelerType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Passenger> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Verified
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Verified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Verified> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0001
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0001> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#name> "Qatar" .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0001> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#overallRating> "10"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0001> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#publicationDate> "2024-02-03T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0002
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0002> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#name> "Qatar" .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0002> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#name> "Ryanair" .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0002> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#overallRating> "6"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0002> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#publicationDate> "2024-01-03T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0003
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0003> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#name> "Ryanair" .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0003> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#overallRating> "1"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0003> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#publicationDate> "2023-12-25T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0004
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0004> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0004> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#name> "Ryanair" .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0004> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#overallRating> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0004> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#publicationDate> "2024-01-03T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0004> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#recommended> "false"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0004> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#travelerType> "Passenger" .
+# 
+# http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0005
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0005> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0005> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#name> "Ryanair" .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0005> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#overallRating> "3"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0005> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#publicationDate> "2023-12-04T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    General axioms
+# #
+# #################################################################
+# 
+# 
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AllDisjointClasses> .
+_:genid1 <http://www.w3.org/2002/07/owl#members> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Recommended> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Rating> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#DatePublished> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CommentTitle> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CommentBody> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Author> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Rules
+# #
+# #################################################################
+# 
+# 
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/p> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/r> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/rating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/body> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/t> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
+_:genid23 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid23 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid23 <http://www.w3.org/2000/01/rdf-schema#label> "S3" .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid23 <http://www.w3.org/2003/11/swrl#body> _:genid40 .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid25 .
+_:genid25 <http://www.w3.org/2003/11/swrl#arguments> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "ground service" .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/body> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#containsIgnoreCase> .
+<http://www.w3.org/2003/11/swrlb#containsIgnoreCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/body> .
+_:genid29 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CommentBody> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid31 .
+_:genid31 <http://www.w3.org/2003/11/swrl#arguments> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "2"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/rating> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#lessThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/rating> .
+_:genid35 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> .
+_:genid35 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasRating> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/p> .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> .
+_:genid37 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasPassenger> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> .
+_:genid39 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid41 .
+_:genid41 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/p> .
+_:genid41 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Passenger> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid23 <http://www.w3.org/2003/11/swrl#head> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid43 .
+_:genid43 <http://www.w3.org/2003/11/swrl#argument2> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid43 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> .
+_:genid43 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#overallRating> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid44 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid44 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid44 <http://www.w3.org/2000/01/rdf-schema#label> "S2" .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid44 <http://www.w3.org/2003/11/swrl#body> _:genid59 .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/2003/11/swrl#arguments> _:genid48 .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "4"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/r> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid46 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> .
+<http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Builtin> .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid50 .
+_:genid50 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/r> .
+_:genid50 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> .
+_:genid50 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasRating> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
+_:genid52 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/p> .
+_:genid52 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> .
+_:genid52 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasPassenger> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid54 .
+_:genid54 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> .
+_:genid54 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
+_:genid56 <http://www.w3.org/2003/11/swrl#argument2> "Business" .
+_:genid56 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/t> .
+_:genid56 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#travelerType> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid58 .
+_:genid58 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/t> .
+_:genid58 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Passenger> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid60 .
+_:genid60 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/p> .
+_:genid60 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Passenger> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid44 <http://www.w3.org/2003/11/swrl#head> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid62 .
+_:genid62 <http://www.w3.org/2003/11/swrl#argument2> "true" .
+_:genid62 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> .
+_:genid62 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#recommended> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^<http://www.w3.org/2001/XMLSchema#boolean> .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#comment> "" .
+_:genid8 <http://www.w3.org/2000/01/rdf-schema#label> "S1" .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid8 <http://www.w3.org/2003/11/swrl#body> _:genid19 .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid10 .
+_:genid10 <http://www.w3.org/2003/11/swrl#arguments> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> "3"^^<http://www.w3.org/2001/XMLSchema#integer> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/r> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#BuiltinAtom> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid14 .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/r> .
+_:genid14 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> .
+_:genid14 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasRating> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid16 .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/p> .
+_:genid16 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> .
+_:genid16 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasPassenger> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid18 .
+_:genid18 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> .
+_:genid18 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid20 .
+_:genid20 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/p> .
+_:genid20 <http://www.w3.org/2003/11/swrl#classPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Passenger> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#ClassAtom> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid8 <http://www.w3.org/2003/11/swrl#head> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid22 .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument2> "false" .
+_:genid22 <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> .
+_:genid22 <http://www.w3.org/2003/11/swrl#propertyPredicate> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#recommended> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

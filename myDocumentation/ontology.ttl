@@ -1,0 +1,446 @@
+@prefix : <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#> .
+
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction> rdf:type owl:Ontology .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled
+<http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasComment
+:hasComment rdf:type owl:ObjectProperty ;
+            rdfs:domain :FlightSurvey ;
+            rdfs:range :Comment .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasPassenger
+:hasPassenger rdf:type owl:ObjectProperty ;
+              rdfs:domain :FlightSurvey ;
+              rdfs:range :Passenger .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#hasRating
+:hasRating rdf:type owl:ObjectProperty ;
+           rdfs:domain :Comment ;
+           rdfs:range :Rating .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain :Airline ;
+      rdfs:range xsd:string .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#overallRating
+:overallRating rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Comment ;
+               rdfs:range xsd:int .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#publicationDate
+:publicationDate rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :Comment ;
+                 rdfs:range xsd:dateTime .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#recommended
+:recommended rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Comment ;
+             rdfs:range xsd:boolean .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#travelerType
+:travelerType rdf:type owl:DatatypeProperty ;
+              rdfs:domain :TravelerType ;
+              rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Aircraft
+:Aircraft rdf:type owl:Class ;
+          rdfs:subClassOf :Flight .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Airline
+:Airline rdf:type owl:Class ;
+         rdfs:subClassOf :FlightSurvey .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Author
+:Author rdf:type owl:Class ;
+        rdfs:subClassOf :Comment .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CabinCrew
+:CabinCrew rdf:type owl:Class ;
+           rdfs:subClassOf :FlightSurvey .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Comment
+:Comment rdf:type owl:Class ;
+         rdfs:subClassOf :FlightSurvey .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CommentBody
+:CommentBody rdf:type owl:Class ;
+             rdfs:subClassOf :Comment .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#CommentTitle
+:CommentTitle rdf:type owl:Class ;
+              rdfs:subClassOf :Comment .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#DatePublished
+:DatePublished rdf:type owl:Class ;
+               rdfs:subClassOf :Comment .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#DestinationCountry
+:DestinationCountry rdf:type owl:Class ;
+                    rdfs:subClassOf :Flight .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Flight
+:Flight rdf:type owl:Class ;
+        rdfs:subClassOf :FlightSurvey .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#FlightSurvey
+:FlightSurvey rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#GroundService
+:GroundService rdf:type owl:Class ;
+               rdfs:subClassOf :FlightSurvey .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#OriginCountry
+:OriginCountry rdf:type owl:Class ;
+               rdfs:subClassOf :Flight .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Passenger
+:Passenger rdf:type owl:Class ;
+           rdfs:subClassOf :FlightSurvey .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Rating
+:Rating rdf:type owl:Class ;
+        rdfs:subClassOf :Comment .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Recommended
+:Recommended rdf:type owl:Class ;
+             rdfs:subClassOf :Comment .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#SeatComfort
+:SeatComfort rdf:type owl:Class ;
+             rdfs:subClassOf :SeatType .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#SeatType
+:SeatType rdf:type owl:Class ;
+          rdfs:subClassOf :FlightSurvey .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#TravelerType
+:TravelerType rdf:type owl:Class ;
+              rdfs:subClassOf :Passenger .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#Verified
+:Verified rdf:type owl:Class ;
+          rdfs:subClassOf :Comment .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0001
+:c0001 rdf:type owl:NamedIndividual ,
+                :Comment ;
+       :name "Qatar" ;
+       :overallRating "10"^^xsd:int ;
+       :publicationDate "2024-02-03T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0002
+:c0002 rdf:type owl:NamedIndividual ,
+                :Comment ;
+       :name "Qatar" ,
+             "Ryanair" ;
+       :overallRating "6"^^xsd:int ;
+       :publicationDate "2024-01-03T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0003
+:c0003 rdf:type owl:NamedIndividual ,
+                :Comment ;
+       :name "Ryanair" ;
+       :overallRating "1"^^xsd:int ;
+       :publicationDate "2023-12-25T00:00:00"^^xsd:dateTime .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0004
+:c0004 rdf:type owl:NamedIndividual ,
+                :Comment ;
+       :name "Ryanair" ;
+       :overallRating "3"^^xsd:int ;
+       :publicationDate "2024-01-03T00:00:00"^^xsd:dateTime ;
+       :recommended "false"^^xsd:boolean ;
+       :travelerType "Passenger" .
+
+
+###  http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction#c0005
+:c0005 rdf:type owl:NamedIndividual ,
+                :Comment ;
+       :name "Ryanair" ;
+       :overallRating "3"^^xsd:int ;
+       :publicationDate "2023-12-04T00:00:00"^^xsd:dateTime .
+
+
+#################################################################
+#    General axioms
+#################################################################
+
+[ rdf:type owl:AllDisjointClasses ;
+  owl:members ( :Author
+                :CommentBody
+                :CommentTitle
+                :DatePublished
+                :Rating
+                :Recommended
+              )
+] .
+
+
+#################################################################
+#    Rules
+#################################################################
+
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/p> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/r> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/rating> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/body> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/t> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S3" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Passenger ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Comment ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPassenger ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/p>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/rating>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/rating> ;
+                                                                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                           rdf:first 2 ;
+                                                                                                                                                           rdf:rest rdf:nil
+                                                                                                                                                         ]
+                                                                                                                                              ]
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#classPredicate> :CommentBody ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/body>
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#containsIgnoreCase> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                                                      rdf:first <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/body> ;
+                                                                                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                 rdf:first "ground service" ;
+                                                                                                                                                                                 rdf:rest rdf:nil
+                                                                                                                                                                               ]
+                                                                                                                                                                    ]
+                                                                                                                       ] ;
+                                                                                                             rdf:rest rdf:nil
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :overallRating ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> 3
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S2" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Passenger ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Passenger ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/t>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :travelerType ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/t> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> "Business"
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#classPredicate> :Comment ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPassenger ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/p>
+                                                                                                 ] ;
+                                                                                       rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                  rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> ;
+                                                                                                              <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/r>
+                                                                                                            ] ;
+                                                                                                  rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                                             rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#greaterThanOrEqual> ;
+                                                                                                                         <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                                                      rdf:first <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/r> ;
+                                                                                                                                                                      rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                                                 rdf:first 4 ;
+                                                                                                                                                                                 rdf:rest rdf:nil
+                                                                                                                                                                               ]
+                                                                                                                                                                    ]
+                                                                                                                       ] ;
+                                                                                                             rdf:rest rdf:nil
+                                                                                                           ]
+                                                                                                ]
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :recommended ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "true"
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ <http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled> "true"^^xsd:boolean ;
+   rdfs:comment "" ;
+   rdfs:label "S1" ;
+   rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#classPredicate> :Passenger ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/p>
+                                                     ] ;
+                                           rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                      rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#ClassAtom> ;
+                                                                  <http://www.w3.org/2003/11/swrl#classPredicate> :Comment ;
+                                                                  <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c>
+                                                                ] ;
+                                                      rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                 rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                             <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasPassenger ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> ;
+                                                                             <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/p>
+                                                                           ] ;
+                                                                 rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#propertyPredicate> :hasRating ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> ;
+                                                                                        <http://www.w3.org/2003/11/swrl#argument2> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/r>
+                                                                                      ] ;
+                                                                            rdf:rest [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                                                                       rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#BuiltinAtom> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#builtin> <http://www.w3.org/2003/11/swrlb#lessThanOrEqual> ;
+                                                                                                   <http://www.w3.org/2003/11/swrl#arguments> [ rdf:type rdf:List ;
+                                                                                                                                                rdf:first <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/r> ;
+                                                                                                                                                rdf:rest [ rdf:type rdf:List ;
+                                                                                                                                                           rdf:first 3 ;
+                                                                                                                                                           rdf:rest rdf:nil
+                                                                                                                                                         ]
+                                                                                                                                              ]
+                                                                                                 ] ;
+                                                                                       rdf:rest rdf:nil
+                                                                                     ]
+                                                                          ]
+                                                               ]
+                                                    ]
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :recommended ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <http://www.semanticweb.org/estel/ontologies/2024/3/FlightSatisfaction/c> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> "false"
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
